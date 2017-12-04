@@ -4,10 +4,10 @@
 
 The goals of this project were the following:
 
-* Use the simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images
+* Use the driving simulator to collect data of good driving behavior
+* Build, a convolutional neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
-* Test that the model successfully drives around track one without leaving the road
+* Test that the model successfully drives around the first track without leaving the road
 
 
 [//]: # (Image References)
@@ -42,11 +42,11 @@ python drive.py model.h5
 
 ### Model architecture
 
-The model consists of a convolution neural network which reduces
-progressively the RGB image to a single horizontal 1D stripe.
+The model consists of a convolutional neural network which reduces
+progressively the RGB image resolution to a single horizontal 1D stripe.
 It is based on the NVIDIA model architecture.
 
-The model also uses maximum pooling after each convolutional layer
+The model uses maximum pooling after each convolutional layer
 to progressively reduce the 2D dimensions of the image.
 
 The model uses RELU activation layers to introduce nonlinearities.
@@ -203,7 +203,7 @@ to the center image.
 
 ![Left, center and right image][image01]
 
-This value of 0.1 was determined to be good value after numerous experiments.
+This value of 0.1 was determined to be a good value after numerous experiments.
 
 ![+0.1 steering correction][image02] ![Center steering][image03] ![-0.1 steering correction][image04]
 
