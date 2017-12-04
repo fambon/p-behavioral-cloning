@@ -205,7 +205,7 @@ to the center image.
 
 This value of 0.1 was determined to be good value after numerous experiments.
 
-![+0.1 steering correction][image02] [Center steering][image03] [-0.1 steering correction][image04]
+![+0.1 steering correction][image02] ![Center steering][image03] ![-0.1 steering correction][image04]
 
 When flipping images the sign of the associated steering command is changed.
 
