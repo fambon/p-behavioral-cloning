@@ -73,6 +73,7 @@ command to a numerical range of -1.0 to +1.0 by using tanh activation.
 | dense_4 (Dense)                | 50            | 5050      |
 | dense_5 (Dense)                | 1             | 51        |
 
+Note: This table does not show the dropout layers.
 
 #### Normalization
 
@@ -209,20 +210,3 @@ This value of 0.1 was determined to be a good value after numerous experiments.
 
 When flipping images the sign of the associated steering command is changed.
 
-
-## Training Strategy
-
-The overall strategy for deriving a model architecture was to ...
-
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
-
-In order to gauge how well the model was working, I split my image and steering
-angle data into a training and validation set.
-
-At the end of the process, the vehicle is able to drive autonomously around the track
-without leaving the road.
-
-I finally randomly shuffled the data set and put 30% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if
-the model was over or under fitting.
